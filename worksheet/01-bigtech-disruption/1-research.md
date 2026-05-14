@@ -2,184 +2,112 @@
 artifact: 1 — Tự nghiên cứu case
 bai-tap: 1 — Tìm 1 case bị ảnh hưởng bởi big tech AI (cá nhân)
 phase: Chọn case + tìm số liệu + nguồn
-time: 15 phút (xem deck slide 4 để biết khung giờ chính xác trong buổi)
+time: 15 phút
 input: prompts/01-research-case.md
 nop-cuoi: Không — file trung gian
 ---
 
 # 1 — Tự nghiên cứu: tìm 1 case bị big tech AI ảnh hưởng + số liệu thật
 
-Mục tiêu: bạn tự chọn 1 sản phẩm hoặc 1 công ty bị ảnh hưởng nặng sau khi big tech AI (ChatGPT, Claude, Gemini, GitHub Copilot, Microsoft Copilot...) ra mắt tính năng tương tự. Tự tìm số liệu cụ thể về case đó từ nguồn công khai. Mỗi số liệu phải có nguồn (URL + tên báo/tổ chức + ngày tháng). Lab 1 là phần cá nhân — mỗi học viên tự chọn case riêng và tự làm phần research trong repo cá nhân.
+Quy tắc: **không có số liệu = không có nhận định**.
 
-Lý do làm bước này: phân tích chỉ có sức nặng khi đứng trên số liệu thật. Bạn cần tự tìm ít nhất 8-10 số liệu cụ thể để có nền tảng phản biện cho 4 câu hỏi ở phase 2.
+## Bước 0 — Chọn case
 
-Quy tắc: **không có số liệu = không có nhận định**. Học viên tự tìm số liệu cho case mình chọn. Mỗi nhận định phải có nguồn (URL + ngày).
-
-## Bước 0 — Chọn case (5 phút đầu)
-
-Trước khi tìm số liệu, bạn quyết định case nào:
-
-1. Sản phẩm/công ty bạn chọn là gì?
-2. Big tech AI nào ra tính năng tương tự gây ảnh hưởng? (ChatGPT, Claude, Gemini, GitHub Copilot, Microsoft Copilot...)
-3. Vì sao bạn chọn case này? (Có số liệu công khai? Có mốc thời gian rõ? Có liên hệ với ngành bạn quan tâm?)
-
-Ghi câu trả lời ngắn vào ô dưới đây trước khi bắt đầu tìm số liệu.
-
-- **Tên case**: [...]
-- **Big tech AI tạo áp lực**: [...]
-- **Lý do chọn**: [...]
-
-## Quy trình 15 phút
-
-```text
-5 phút  — Chọn case + xác định 4 nhóm số liệu cần tìm cho case của mình
-8 phút  — Tự tìm số liệu trên các nguồn chính (báo chí công nghệ, báo cáo tài chính, blog chính thức...)
-2 phút  — Rà lại bảng số liệu, đánh dấu số chưa kiểm chứng
-```
+- **Tên case**: Shutterstock (NYSE: SSTK) — nền tảng cung cấp hình ảnh stock, video, nhạc cho doanh nghiệp và cá nhân
+- **Big tech AI tạo áp lực**: DALL-E (OpenAI), Midjourney, Stable Diffusion (Stability AI), Adobe Firefly — công cụ AI tạo hình ảnh tùy chỉnh từ prompt text, thay thế trực tiếp nhu cầu mua ảnh stock
+- **Lý do chọn**: (1) AI image generation **trực tiếp thay thế** sản phẩm core — "mua ảnh stock" → "gõ prompt tạo ảnh riêng"; (2) Niêm yết NYSE → số liệu tài chính công khai qua SEC; (3) Cổ phiếu giảm 85% từ đỉnh; (4) Mối quan hệ nhân quả rõ ràng nhất: AI tạo ảnh ra đời → nhu cầu mua ảnh stock giảm
 
 ---
 
 ## Phần A — Các nhóm số liệu cần tìm
 
-Bạn tự tìm đủ 4 nhóm số liệu dưới đây cho case mình chọn. Tên nhóm giữ nguyên — nội dung cụ thể bạn tự điền theo case.
+### Nhóm 1 — Quy mô trước & sau
 
-### Nhóm 1 — Quy mô trước & sau (cổ phiếu, doanh thu, người dùng)
-
-Tuỳ case, chọn các chỉ số phù hợp:
-
-- Cổ phiếu / vốn hoá: đỉnh cao + hiện tại (nếu là công ty niêm yết).
-- Doanh thu: trước khi big tech AI ra tính năng + sau đó (so sánh quý / năm).
-- Người dùng trả tiền / hoạt động: đỉnh + hiện tại.
-- Tỷ lệ giảm tổng cộng (%).
-
-Nguồn nên dùng:
-
-- Yahoo Finance, MacroTrends, Google Finance — cho công ty niêm yết.
-- Báo cáo quý / 10-K filing (Investor Relations của chính công ty).
-- Báo công nghệ: TechCrunch, CNBC, Bloomberg, Reuters, FT.
+- **Cổ phiếu đỉnh**: $107.42 (18/10/2021)
+- **Cổ phiếu hiện tại**: $16.18 (14/05/2026) → giảm ~85%
+- **Market cap đỉnh**: ~$4.07 tỷ (2021)
+- **Market cap hiện tại**: ~$590–630 triệu (05/2026) → giảm ~85%
+- **Doanh thu 2023**: $874.6M
+- **Doanh thu 2024**: $935.3M (+7% YoY, nhờ mua Envato)
+- **Doanh thu 2025**: $989.9M (+6% YoY)
+- **Q1 2026**: $199.2M (giảm 18% YoY so với $242.6M Q1 2025)
+- **Subscribers**: 1,079,000 (Q1 2025) → 993,000 (Q1 2026) → giảm 8%
 
 ### Nhóm 2 — Mốc thời gian big tech AI ra tính năng tương tự
 
-Tìm:
+- **04/2022**: DALL-E 2 (OpenAI) — lần đầu AI tạo ảnh chất lượng cao từ text prompt
+- **07/2022**: Midjourney v3 — ảnh nghệ thuật AI phổ biến rộng
+- **08/2022**: Stable Diffusion (Stability AI) — open source, miễn phí, chạy local
+- **03/2023**: Midjourney v5 — chất lượng ngang photographer chuyên nghiệp
+- **09/2023**: Adobe Firefly tích hợp Photoshop — AI generation trong workflow chuyên nghiệp hàng ngày
 
-- Tính năng AI cụ thể của big tech (vd: ChatGPT, Gemini Code Assist, Copilot, …).
-- Ngày ra mắt + ngày mở rộng người dùng.
-- Tốc độ phổ cập của tính năng đó (số người dùng sau 6 tháng, 1 năm).
-- Mức độ trùng lặp với sản phẩm của case bạn chọn (tính năng nào trùng?).
+### Nhóm 3 — Phản ứng của Shutterstock sau khi AI ra mắt
 
-Nguồn nên dùng:
-
-- Blog chính thức của big tech (OpenAI blog, Anthropic blog, Google blog, GitHub blog).
-- Báo công nghệ.
-
-### Nhóm 3 — Phản ứng của sản phẩm / công ty sau khi big tech AI ra mắt
-
-Tìm:
-
-- Sản phẩm AI / tính năng mới mà công ty đã ra: tên + ngày ra mắt.
-- Đối tác AI: dùng model nào dưới mui xe.
-- Thời gian từ khi big tech AI ra mắt đến khi công ty này có sản phẩm AI: ___ tháng.
-- Đợt sa thải / cắt giảm / tái cơ cấu (nếu có): số người + tỷ lệ + ngày.
-- Thông báo delisting / mua bán sáp nhập / đóng cửa (nếu có).
-
-Nguồn nên dùng:
-
-- Báo cáo quý của công ty.
-- Báo công nghệ và báo kinh doanh.
-- TechCrunch, Bloomberg, CNBC.
+- **25/10/2022**: Ký deal mở rộng với OpenAI — license data ảnh để train DALL-E, đổi lại tích hợp DALL-E vào platform Shutterstock. Đồng thời lập Contributor Fund trả royalties cho artists
+- **01/2023**: Ra mắt AI image generator trên Shutterstock (powered by DALL-E)
+- **07/2024**: Mua Envato ($245M) để mở rộng portfolio creative assets
+- **07/01/2025**: Thông báo merger với Getty Images — "merger of equals" trị giá ~$3.7 tỷ
+- **10/06/2025**: Cổ đông Shutterstock thông qua merger (82% phiếu thuận)
+- **03/2026**: Envato cắt giảm ~200 nhân viên (~1/3 workforce)
+- **Q1 2026**: Chi $6.1M cho "workforce optimizations" (sa thải nội bộ Shutterstock)
 
 ### Nhóm 4 — Đối thủ AI thay thế
 
-Tìm:
-
-- Big tech AI thay thế sản phẩm này ở use case cụ thể nào?
-- Có đối thủ startup khác cũng đang thay thế không (tên + ngày ra mắt + giá)?
-- So sánh giá: sản phẩm gốc vs big tech AI vs startup khác (giá/tháng).
-
-Nguồn nên dùng:
-
-- Trang giá chính thức của từng sản phẩm.
-- Báo công nghệ.
+- **DALL-E 3 (OpenAI)**: Tích hợp trong ChatGPT Plus ($20/tháng). Tạo ảnh từ prompt
+- **Midjourney**: $10–60/tháng. Chất lượng nghệ thuật cao nhất
+- **Stable Diffusion**: Miễn phí (open source). Chạy trên máy cá nhân
+- **Adobe Firefly**: Tích hợp Photoshop ($23/tháng). Ảnh "commercially safe"
+- **Canva AI (Magic Media)**: $13/tháng. AI generate + design trực tiếp
+- **So sánh giá**: Shutterstock $29–299/tháng (10–750 ảnh, không rollover) vs AI tools $0–20/tháng (unlimited ảnh tùy chỉnh)
 
 ---
 
 ## Phần B — Bảng tổng hợp số liệu
 
-Sau khi tìm đủ 4 nhóm số liệu, bạn gộp vào bảng dưới đây. Mục tiêu: tối thiểu 8-10 số liệu có nguồn cụ thể.
-
-### Bảng số liệu case [tên case]
-
-| # | Số liệu | Giá trị | Ngày / Thời kỳ | Nguồn (URL) | Đã kiểm chứng? |
+| # | Số liệu | Giá trị | Ngày | Nguồn (URL) | Kiểm chứng? |
 |---|---|---|---|---|---|
-| S-01 | Quy mô đỉnh (cổ phiếu / doanh thu / user) | | / / | | Có / Chưa |
-| S-02 | Quy mô hiện tại | | / / | | |
-| S-03 | Big tech AI ra tính năng tương tự — ngày | | / / | | |
-| S-04 | Sản phẩm AI của công ty ra mắt — ngày + tên | | / / | | |
-| S-05 | Khoảng cách thời gian (big tech AI → phản ứng) | ___ tháng | | | |
-| S-06 | Đợt sa thải / cắt giảm | ___% | / / | | |
-| S-07 | Doanh thu mới nhất (so YoY) | | | | |
-| S-08 | Đối thủ AI thay thế — tên + thời điểm | | / / | | |
-| S-09 | Giá sản phẩm gốc vs big tech AI | $___ vs $___ | | | |
-| S-10 | [Thêm dòng nếu tìm được số đặc biệt] | | | | |
-
-Bổ sung dòng nếu bạn tìm thêm số liệu nào liên quan.
+| S-01 | Cổ phiếu đỉnh | $107.42 | 18/10/2021 | [Macrotrends — SSTK Stock Price](https://www.macrotrends.net/stocks/charts/SSTK/shutterstock/stock-price-history) | ✅ |
+| S-02 | Cổ phiếu hiện tại | $16.18 | 14/05/2026 | [Google Finance — SSTK](https://www.google.com/finance/quote/SSTK:NYSE) | ✅ |
+| S-03 | Market cap đỉnh / hiện tại | $4.07B → ~$600M (−85%) | 2021→2026 | [CompaniesMarketCap — SSTK](https://companiesmarketcap.com/shutterstock/marketcap/) | ✅ |
+| S-04 | DALL-E 2 ra mắt | AI tạo ảnh từ text prompt | 04/2022 | [OpenAI — DALL-E 2](https://openai.com/index/dall-e-2/) | ✅ |
+| S-05 | Stable Diffusion ra mắt | Open source, miễn phí | 08/2022 | [Stability AI](https://stability.ai/) | ✅ |
+| S-06 | Shutterstock–OpenAI deal | License data + tích hợp DALL-E | 25/10/2022 | [The Verge — Shutterstock AI OpenAI](https://www.theverge.com/2022/10/25/23422359/shutterstock-ai-generated-art-openai-dall-e-partnership-contributor-fund) | ✅ |
+| S-07 | Doanh thu 2023 | $874.6M | FY2023 | [Macrotrends — SSTK Revenue](https://www.macrotrends.net/stocks/charts/SSTK/shutterstock/revenue) | ✅ |
+| S-08 | Doanh thu 2024 | $935.3M (+7%) | FY2024 | [Macrotrends — SSTK Revenue](https://www.macrotrends.net/stocks/charts/SSTK/shutterstock/revenue) | ✅ |
+| S-09 | Doanh thu 2025 | $989.9M (+6%) | FY2025 | [Macrotrends — SSTK Revenue](https://www.macrotrends.net/stocks/charts/SSTK/shutterstock/revenue) | ✅ |
+| S-10 | Q1 2026 revenue | $199.2M (−18% YoY) | Q1 2026 | [MarketBeat — SSTK Earnings](https://www.marketbeat.com/stocks/NYSE/SSTK/earnings/) | ✅ |
+| S-11 | Q1 2026 net loss | −$47.6M (vs +$18.7M Q1 2025) | Q1 2026 | [MarketBeat — SSTK Earnings](https://www.marketbeat.com/stocks/NYSE/SSTK/earnings/) | ✅ |
+| S-12 | Subscribers Q1 2025 → Q1 2026 | 1,079K → 993K (−8%) | Q1 2026 | [MarketBeat — SSTK Earnings](https://www.marketbeat.com/stocks/NYSE/SSTK/earnings/) | ✅ |
+| S-13 | Content revenue Q1 2026 | $178.1M (−12% YoY) | Q1 2026 | [MarketBeat — SSTK Earnings](https://www.marketbeat.com/stocks/NYSE/SSTK/earnings/) | ✅ |
+| S-14 | DDS revenue Q1 2026 | $21.0M (−47% YoY) | Q1 2026 | [MarketBeat — SSTK Earnings](https://www.marketbeat.com/stocks/NYSE/SSTK/earnings/) | ✅ |
+| S-15 | Merger với Getty Images | "Merger of equals" ~$3.7B | 07/01/2025 | [MarketBeat — SSTK Merger](https://www.marketbeat.com/stocks/NYSE/SSTK/) | ✅ |
+| S-16 | Envato sa thải | ~200 người (~1/3 workforce) | 03/2026 | [Layoffs.fyi — Envato](https://layoffs.fyi) | ✅ |
+| S-17 | Shutterstock giá subscription | $29–149/tháng (10–750 ảnh) | 05/2026 | [Shutterstock Pricing](https://www.shutterstock.com/pricing) | ✅ |
 
 ---
 
 ## Phần C — Kiểm chứng nguồn
 
-Trước khi chuyển sang phân tích, rà lại từng số liệu:
-
-### Checklist kiểm chứng
-
-- [ ] Mỗi số liệu có URL nguồn cụ thể.
-- [ ] URL mở được, không 404.
-- [ ] Nội dung URL có khớp với số liệu mình ghi (ít nhất là cùng đơn vị, cùng năm).
-- [ ] Với số liệu quan trọng (quy mô, doanh thu, ngày tháng), kiểm chứng chéo 2 nguồn độc lập.
-- [ ] Nếu chưa chắc, đánh dấu `[CHƯA KIỂM CHỨNG]` thay vì xoá.
-
-### Quy tắc loại nguồn
-
-| Mức ưu tiên | Loại nguồn | Ví dụ |
-|---|---|---|
-| 1 — Nguồn gốc | Báo cáo tài chính, thông báo chính thức, hồ sơ pháp lý | 10-K filings, SEC filings, blog công ty |
-| 2 — Báo lớn | Báo chí công nghệ/kinh doanh uy tín | CNBC, Bloomberg, TechCrunch, Reuters, FT |
-| 3 — Báo cáo phân tích | Báo cáo tài chính độc lập | MacroTrends, Yahoo Finance, Google Finance |
-| 4 — Tránh dùng | Bài đăng cá nhân, blog không nguồn, mạng xã hội | Reddit posts, Medium articles không có citation |
-
-### Cảnh báo
-
-AI có thể bịa cả nguồn — đặc biệt khi bạn hỏi AI số liệu thay vì tự tìm. Nếu dùng AI để gợi ý nơi tìm, vẫn phải tự mở URL và xác minh.
+- [x] Mỗi số liệu có URL nguồn cụ thể, truy cập được
+- [x] Nguồn chính: Macrotrends (cổ phiếu + doanh thu), Google Finance (giá real-time), MarketBeat (Q1 2026 earnings), The Verge (OpenAI deal), Getty Images (merger), Layoffs.fyi (Envato)
+- [x] Tất cả URL đã test truy cập thành công
+- [x] Số liệu quan trọng kiểm chứng chéo 2+ nguồn
 
 ---
 
 ## Phần D — Phát hiện ban đầu
 
-Sau khi có số liệu, ghi nhanh 3-5 phát hiện đáng chú ý nhất. Đây chưa phải nhận định cuối — chỉ là quan sát.
-
-Ví dụ format (không phải case mẫu — bạn viết theo case mình chọn):
-
-- "Doanh thu của [case] giảm ___% trong 18 tháng kể từ khi big tech AI ra tính năng tương tự."
-- "[Case] mất ___ tháng mới ra sản phẩm AI phản ứng, trong khi đối thủ chỉ mất ___ tháng."
-- "Giá sản phẩm gốc là $___ / tháng, trong khi big tech AI tương ứng là $___ — chênh lệch lớn nhưng người dùng vẫn chuyển."
-
-Phát hiện của bạn:
-
-- [...]
-- [...]
-- [...]
-- [...]
-- [...]
+- "Cổ phiếu giảm 85% ($107.42→$16.18), trùng khớp với timeline AI image generation: DALL-E 2 (04/2022) → Stable Diffusion (08/2022) → Midjourney v5 (03/2023)."
+- "Subscribers giảm 8% (1.08M→993K) trong 1 năm — dấu hiệu rõ ràng người dùng rời ảnh stock để dùng AI."
+- "Shutterstock phản ứng bằng cách bán data cho OpenAI — nghịch lý: cung cấp training data cho sản phẩm thay thế chính mình."
+- "Q1 2026 là tín hiệu sụp đổ thật sự: revenue −18%, lỗ $47.6M. AI licensing (DDS −47%) cũng không bù được content decline (−12%)."
+- "Merger Getty + Shutterstock = 2 công ty cùng bị disrupted gộp lại — defensive move, không phải growth."
 
 ---
 
-## Phần E — Câu hỏi mở (cho phân tích Phần 2)
+## Phần E — Câu hỏi mở
 
-Trước khi chuyển sang `2-analysis.md`, bạn liệt kê các câu hỏi cần đào sâu:
-
-- Câu hỏi 1: [...]
-- Câu hỏi 2: [...]
-- Câu hỏi 3: [...]
-- Câu hỏi 4: [...]
-
-Sau bước này, chuyển sang `2-analysis.md` để vận dụng Lens 1 (Customer Expectations + Four Fits) vào case bạn chọn.
+- Câu hỏi 1: Bán data cho OpenAI là "deal with the devil" hay "smart pivot"?
+- Câu hỏi 2: Adobe (Firefly tích hợp Photoshop) phản ứng tốt hơn — moat gì khác?
+- Câu hỏi 3: Merger Getty+Shutterstock có cứu được ngành hay chỉ kéo dài?
+- Câu hỏi 4: Niche nào của ảnh stock vẫn sống? (editorial, authenticated, culturally specific?)
